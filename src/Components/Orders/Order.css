@@ -1,0 +1,11 @@
+.cart{
+ 
+}
+.order-container{
+    display: flex;
+    justify-content: space-around;
+}
+.cart-style{
+    padding: 25px;
+  
+}
