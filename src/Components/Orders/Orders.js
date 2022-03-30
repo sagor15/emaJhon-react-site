@@ -8,12 +8,15 @@ import "./Order.css";
 const Orders = () => {
   const [products, setProducts] = useProducts();
   const [cart, setCart] = useCart(products);
-  console.log(cart);
+  const handleRemove = (product) => {
+    const rest = cart.filter((pd) => pd.id !== product.id);
+    setCart(rest);
+  };
   return (
     <div className="order-container">
-      <div className="cart">
+      <div className="carts">
         {cart.map((product) => (
-          <Oma key={product.id} product={product}></Oma>
+          <Oma key={product.id} product={product} handleRemove={handleRemove}></Oma>
         ))}
       </div>
       <div className="cart-style">{<OrderCart cart={cart}></OrderCart>}</div>

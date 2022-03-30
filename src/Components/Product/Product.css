@@ -5,7 +5,8 @@
   box-sizing: border-box;
   border-radius: 7px;
   font-family: sans-serif;
-  position: relative;
+  position: static;
+  /* position: static; */
 }
 .para {
   margin-top: 14px;
@@ -29,7 +30,7 @@
   /* margin-top: 14px; */
 }
 .btn {
-  width: 100%;
+  width: 300px;
   background: #ffe0b3;
   border: none;
   position: absolute;
@@ -38,6 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: static;
 }
 .btn-text {
   margin-right: 5px;

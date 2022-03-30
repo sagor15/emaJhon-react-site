@@ -1,11 +1,10 @@
-.cart{
- 
+.carts {
+  position: static;
 }
-.order-container{
-    display: flex;
-    justify-content: space-around;
+.order-container {
+  display: flex;
+  justify-content: space-around;
 }
-.cart-style{
-    padding: 25px;
-  
+.cart-style {
+  padding: 25px;
 }
